@@ -35,17 +35,18 @@ Open, Web < up : skhdgui -p
 Open, Web < down : skhdgui -n
 Open, Web < return : skhdgui -C
 
+
 ### Web Mode
 rctrl - w ; Web
 
-# Canvas
+# GitHub
 Web < c : skhd -k escape; open https://github.com
 
 
 ### Open Mode
 rctrl - space ; Open
 
-# Scripts
+# skhd config
 Open < s : skhd -k escape; mate ~/.config/scripts
 ```
 
@@ -56,6 +57,10 @@ The name will be pulled from the comment above the shortcut configuration in skh
 To build, you will need a recent version of XCode. Clone the repository, open `skhdgui.xcodeproj` in XCode, and it should build successfully (we hope, please feel free to submit an issue if you find significant issues building using XCode). 
 
 ### Current limitations
- - Only shortcuts which refer to the exact mode "Open", not "Open, Web" will be recognized.
+ - Only shortcuts which refer to the exact mode `Open`, not `Open, Web` will be recognized.
  - `.load` ignored
  - Config is re-parsed on every `skhdgui -w <mode>` command
+
+
+
+
