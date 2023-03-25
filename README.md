@@ -51,6 +51,10 @@ Open < s : skhd -k escape; mate ~/.config/scripts
 
 The name will be pulled from the comment above the shortcut configuration in skhd, and the full shortcut section will be displayed. See the regex in `ConfigParser.swift` for details.
 
+### Building
+
+To build, you will need a recent version of XCode. Clone the repository, open `skhdgui.xcodeproj` in XCode, and it should build successfully (we hope, please feel free to submit an issue if you find significant issues building using XCode). 
+
 ### Current limitations
  - Only shortcuts which refer to the exact mode "Open", not "Open, Web" will be recognized.
  - `.load` ignored
